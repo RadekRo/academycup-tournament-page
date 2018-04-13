@@ -9,4 +9,14 @@ body {
   background-size: cover;
   height: 100vh; }
 
+.main-title {
+  margin: 0 auto;
+  top: 25vh;
+  position: relative;
+  width: 50%;
+  text-align: center; }
+
+.main-logo {
+  width: 80%; }
+
 /*# sourceMappingURL=styles.css.map */
