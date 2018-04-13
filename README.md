@@ -16,4 +16,4 @@ HTML5, CSS, JavaScript, jQuery, Bootstrap.
 
 __Licence:__
 
-Copyright 2018 by `<RadekRo/>` Development Team & Ankara.pl
+Copyright 2018 by `<RadekRo/>` & Ankara.pl
