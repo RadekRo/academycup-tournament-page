@@ -6,7 +6,8 @@ body {
   height: 50px;
   background-color: #000000;
   position: fixed;
-  box-shadow: 0 5px 5px #000000; }
+  box-shadow: 0 5px 5px #000000;
+  z-index: 1; }
 
 .nav-icon {
   height: 40px;
@@ -54,5 +55,16 @@ nav li:hover {
 
 .main-logo {
   width: 80%; }
+
+section {
+  background-color: #666633; }
+
+.section-bar {
+  background-color: #FF0000;
+  text-align: center;
+  padding: 10px 0; }
+
+.section-content {
+  padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

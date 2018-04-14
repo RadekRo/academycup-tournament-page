@@ -15,6 +15,7 @@ body {
   background-color: $black;
   position: fixed;
   box-shadow: 0 5px 5px $black;
+  z-index: 1;
 }
 
 .nav-icon {
@@ -72,4 +73,18 @@ nav li:hover {
 
 .main-logo {
   width: 80%;
+}
+
+section {
+  background-color: $green;
+}
+
+.section-bar {
+  background-color: $red;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section-content {
+  padding: 10px;
 }
