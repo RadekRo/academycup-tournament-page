@@ -12,7 +12,7 @@ won't be avaliable in the public repository.
 
 __Tools:__
 
-HTML5, CSS, JavaScript, jQuery, Bootstrap.
+HTML5, CSS, JavaScript and jQuery library.
 
 __Licence:__
 
