@@ -1,6 +1,7 @@
 $black: #000000;
 $white: #FFFFFF;
 $red: #FF0000;
+$green: #666633;
 
 $main-font: Oswald, Arial, sans-serif;
 
@@ -8,29 +9,67 @@ body {
   font-family: $main-font;
 }
 
-.parallax {
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  background-color: $black;
+  position: fixed;
+  box-shadow: 0 5px 5px $black;
+}
 
+.nav-icon {
+  height: 40px;
+  margin: 5px 0;
+}
+
+.nav-icon-container {
+  float: left;
+  margin-left: 30px;
+}
+
+nav {
+  color: $white;
+  font-size: 20px;
+}
+
+nav li {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+nav li:hover {
+  border-bottom: 2px solid $green;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.parallax {
   background-image: url("./images/main_background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
 }
 
 .main-title {
-
   margin: 0 auto;
   top: 25vh;
   position: relative;
   width: 50%;
   text-align: center;
-
 }
 
 .main-logo {
-
   width: 80%;
-
 }
