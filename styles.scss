@@ -5,6 +5,11 @@ $green: #666633;
 
 $main-font: Oswald, Arial, sans-serif;
 
+@keyframes fadeInEffect {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 body {
   font-family: $main-font;
 }
@@ -28,9 +33,13 @@ body {
   margin-left: 30px;
 }
 
+.nav-icon-container:hover {
+  cursor: pointer;
+}
+
 nav {
   color: $white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav li {
@@ -67,24 +76,94 @@ nav li:hover {
   margin: 0 auto;
   top: 25vh;
   position: relative;
-  width: 50%;
+  width: 70%;
   text-align: center;
+  p {
+    color: white;
+    font-size: 22px;
+    padding: 5px 0;
+    line-height: 30px;
+  }
+
+  p:first-of-type {
+    padding: 50px 0 0 0;
+  }
 }
 
 .main-logo {
-  width: 80%;
+  width: 100%;
+  animation-name: fadeInEffect;
+  animation-duration: 4s;
 }
 
 section {
   background-color: $green;
+  width: 100%;
 }
 
 .section-bar {
   background-color: $red;
   text-align: center;
   padding: 10px 0;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+  color: $white;
+  font-size: 20px;
+  clear: both;
 }
 
 .section-content {
   padding: 10px;
+  color: $white;
+  font-size: 17px;
+  line-height: 20px;
+  clear: both;
+}
+
+.section-content-element {
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+.poster {
+  width: 90%;
+}
+
+.sign-in {
+  padding: 30px 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+footer {
+  background-color: $black;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: $white;
+}
+
+.marker {
+  color: yellow;
+}
+
+@media (min-width: 720px) {
+  .poster {
+    width: 60%;
+  }
+  .main-logo {
+    width: 60%;
+  }
+  .main-title {
+    width: 50%;
+  }
+  nav {
+    font-size: 20px;
+  }
 }
