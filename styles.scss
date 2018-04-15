@@ -2,6 +2,7 @@ $black: #000000;
 $white: #FFFFFF;
 $red: #FF0000;
 $green: #666633;
+$marker: #ffff00;
 
 $main-font: Oswald, Arial, sans-serif;
 
@@ -79,7 +80,7 @@ nav li:hover {
   width: 70%;
   text-align: center;
   p {
-    color: white;
+    color: $white;
     font-size: 22px;
     padding: 5px 0;
     line-height: 30px;
@@ -150,7 +151,7 @@ footer {
 }
 
 .marker {
-  color: yellow;
+  color: $marker;
 }
 
 .rotation-info {
@@ -159,7 +160,7 @@ footer {
   justify-content: center;
   text-align: center;
   font-size: 7vh;
-  color: white;
+  color: $white;
   height: 100vh;
   display: none;
 }
@@ -174,7 +175,7 @@ footer {
   .main-title {
     width: 50%;
     top: 25vh;
-  }
+    }
   nav {
     font-size: 20px;
   }

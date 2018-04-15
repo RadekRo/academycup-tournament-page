@@ -61,7 +61,7 @@ nav li:hover {
   width: 70%;
   text-align: center; }
   .main-title p {
-    color: white;
+    color: #FFFFFF;
     font-size: 22px;
     padding: 5px 0;
     line-height: 30px; }
@@ -118,7 +118,7 @@ footer {
   color: #FFFFFF; }
 
 .marker {
-  color: yellow; }
+  color: #ffff00; }
 
 .rotation-info {
   background-color: #FF0000;
@@ -126,7 +126,7 @@ footer {
   justify-content: center;
   text-align: center;
   font-size: 7vh;
-  color: white;
+  color: #FFFFFF;
   height: 100vh;
   display: none; }
 
