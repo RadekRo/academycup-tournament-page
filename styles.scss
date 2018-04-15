@@ -153,6 +153,17 @@ footer {
   color: yellow;
 }
 
+.rotation-info {
+  background-color: $red;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 7vh;
+  color: white;
+  height: 100vh;
+  display: none;
+}
+
 @media (min-width: 720px) {
   .poster {
     width: 60%;
@@ -169,22 +180,12 @@ footer {
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 719px) and (orientation: landscape) {
-  html {
-    webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transform-origin: left top;
-    -moz-transform-origin: left top;
-    -ms-transform-origin: left top;
-    -o-transform-origin: left top;
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
+@media screen and (min-width: 300px) and (max-width: 719px) and (orientation: landscape)
+{
+  main, footer, .nav-bar {
+    display: none;
+  }
+  .rotation-info {
+    display: flex;
   }
 }
