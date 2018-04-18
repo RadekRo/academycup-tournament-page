@@ -27,7 +27,8 @@ body {
 
 nav {
   color: #FFFFFF;
-  font-size: 18px; }
+  font-size: 18px;
+  display: none; }
 
 nav li {
   display: inline;
@@ -130,6 +131,65 @@ footer {
   height: 100vh;
   display: none; }
 
+.menu-short, .menu-short a {
+  background-color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0 5px;
+  position: relative; }
+
+.menu-short span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0 5px; }
+
+.chkbox-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 90%;
+  cursor: pointer; }
+
+input.chkbox-menu {
+  opacity: 0; }
+
+.menu-short-collapse {
+  position: fixed;
+  right: -160px;
+  top: 80px;
+  width: 160px;
+  color: #FFFFFF;
+  background-color: #000000;
+  transition: right 2s;
+  -webkit-transition: right 2s;
+  padding-bottom: 10px;
+  opacity: 0.9; }
+  .menu-short-collapse span.menu-short-list {
+    padding: 10px 0 10px 25px;
+    border-bottom: 4px solid #FF0000; }
+  .menu-short-collapse span.menu-short-list a {
+    color: #FFFFFF;
+    background: #000000; }
+  .menu-short-collapse span.menu-short-list a:hover {
+    color: #FF0000;
+    background-color: #000000; }
+
+.menu-short input:checked ~ .menu-short-collapse {
+  right: 0; }
+
 @media (min-width: 720px) {
   .poster {
     width: 60%; }
@@ -149,5 +209,11 @@ footer {
 
   .rotation-info {
     display: flex; } }
+@media (min-width: 576px) {
+  nav {
+    display: block; }
+
+  .menu-short {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
