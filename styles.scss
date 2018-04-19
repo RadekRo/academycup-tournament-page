@@ -167,15 +167,15 @@ footer {
 }
 
 .menu-short, .menu-short a {
-  background-color: $white;
+  background-color: $black;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  margin: 0 20px 0 0;
+  margin: 10px 20px 0 0;
   cursor: pointer;
   border-radius: 5px;
   padding: 0 5px;
-  position: relative;
+  float: right;
 }
 
 .menu-short span {
@@ -183,7 +183,7 @@ footer {
   width: 26px;
   height: 3px;
   border-radius: 1px;
-  background-color: $black;
+  background-color: $white;
   margin-bottom:5px;
   margin-top:5px;
   padding: 0 5px;
@@ -204,19 +204,18 @@ input.chkbox-menu {
 
 .menu-short-collapse {
   position: fixed;
-  right: -160px;
-  top: 80px;
-  width: 160px;
+  display: none;
+  width: 100%;
   color: $white;
   background-color: $black;
-  transition: right 2s; // transition effect for short menu
-  -webkit-transition: right 2s; // transition effect for short menu
   padding-bottom: 10px;
   opacity: 0.9;
+  top: 54px;
 
   span.menu-short-list {
-    padding: 10px 0 10px 25px;
     border-bottom: 4px solid $red;
+    position: relative;
+    text-align: center;
   }
 
   span.menu-short-list a {
@@ -231,7 +230,7 @@ input.chkbox-menu {
 }
 
 .menu-short input:checked~.menu-short-collapse {
-  right: 0;
+  display: block;
 }
 
 @media (min-width: 720px) {

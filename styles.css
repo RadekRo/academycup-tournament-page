@@ -132,22 +132,22 @@ footer {
   display: none; }
 
 .menu-short, .menu-short a {
-  background-color: #FFFFFF;
+  background-color: #000000;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  margin: 0 20px 0 0;
+  margin: 10px 20px 0 0;
   cursor: pointer;
   border-radius: 5px;
   padding: 0 5px;
-  position: relative; }
+  float: right; }
 
 .menu-short span {
   display: block;
   width: 26px;
   height: 3px;
   border-radius: 1px;
-  background-color: #000000;
+  background-color: #FFFFFF;
   margin-bottom: 5px;
   margin-top: 5px;
   padding: 0 5px; }
@@ -168,18 +168,17 @@ input.chkbox-menu {
 
 .menu-short-collapse {
   position: fixed;
-  right: -160px;
-  top: 80px;
-  width: 160px;
+  display: none;
+  width: 100%;
   color: #FFFFFF;
   background-color: #000000;
-  transition: right 2s;
-  -webkit-transition: right 2s;
   padding-bottom: 10px;
-  opacity: 0.9; }
+  opacity: 0.9;
+  top: 54px; }
   .menu-short-collapse span.menu-short-list {
-    padding: 10px 0 10px 25px;
-    border-bottom: 4px solid #FF0000; }
+    border-bottom: 4px solid #FF0000;
+    position: relative;
+    text-align: center; }
   .menu-short-collapse span.menu-short-list a {
     color: #FFFFFF;
     background: #000000; }
@@ -188,7 +187,7 @@ input.chkbox-menu {
     background-color: #000000; }
 
 .menu-short input:checked ~ .menu-short-collapse {
-  right: 0; }
+  display: block; }
 
 @media (min-width: 720px) {
   .poster {
