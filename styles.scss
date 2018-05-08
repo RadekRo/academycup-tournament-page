@@ -171,11 +171,7 @@ footer {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  margin: 10px 20px 0 0;
   cursor: pointer;
-  border-radius: 5px;
-  padding: 0 5px;
-  float: right;
 }
 
 .menu-short span {
@@ -204,17 +200,18 @@ input.chkbox-menu {
 
 .menu-short-collapse {
   position: fixed;
-  display: none;
+  //display: none;
+  display: block;
   width: 100%;
   color: $white;
   background-color: $black;
   padding-bottom: 10px;
   opacity: 0.9;
   top: 54px;
+  text-align: center;
 
-  span.menu-short-list {
-    border-bottom: 4px solid $red;
-    position: relative;
+span.menu-short-list {
+    //border-bottom: 4px solid $red;
     text-align: center;
   }
 
