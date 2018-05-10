@@ -1,4 +1,4 @@
-const $navLinks = $('nav a');
+const $navLinks = $('li a');
 const animationScrollTime = 700;
 const $page = $('html, body');
 const $logo = $('.nav-icon-container');

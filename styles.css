@@ -12,15 +12,18 @@ body {
   background-color: #000000;
   position: fixed;
   box-shadow: 0 5px 5px #000000;
-  z-index: 1; }
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end; }
 
 .nav-icon {
   height: 40px;
   margin: 5px 0; }
 
 .nav-icon-container {
-  float: left;
-  margin-left: 30px; }
+  position: absolute;
+  left: 20px;
+  top: 0px; }
 
 .nav-icon-container:hover {
   cursor: pointer; }
@@ -136,7 +139,9 @@ footer {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  margin: 12px 20px 0 0; }
 
 .menu-short span {
   display: block;
@@ -165,14 +170,17 @@ input.chkbox-menu {
 .menu-short-collapse {
   position: fixed;
   display: block;
-  width: 100%;
+  width: 205px;
   color: #FFFFFF;
   background-color: #000000;
   opacity: 0.9;
   top: 54px;
-  text-align: center; }
+  text-align: center;
+  margin-left: 55px;
+  transition: margin-left 2s;
+  -webkit-transition: margin-left 2s; }
   .menu-short-collapse li {
-    padding: 10px 0;
+    padding: 10px 0 10px 10px;
     border-bottom: 1px solid #FF0000; }
     .menu-short-collapse li a {
       color: #FFFFFF; }
@@ -180,7 +188,7 @@ input.chkbox-menu {
     border-bottom: 0px; }
 
 .menu-short input:checked ~ .menu-short-collapse {
-  display: block; }
+  margin-left: -130px; }
 
 @media (min-width: 720px) {
   .poster {
