@@ -232,6 +232,21 @@ input.chkbox-menu {
 
 }
 
+.teams {
+  width: 100%;
+  text-align:center;
+}
+
+.team-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.team-name {
+  padding: 5px 0;
+}
+
 .menu-short input:checked~.menu-short-collapse {
   margin-left: -130px;
 }
