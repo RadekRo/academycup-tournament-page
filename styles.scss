@@ -233,18 +233,28 @@ input.chkbox-menu {
 }
 
 .teams {
+  text-align: center;
   width: 100%;
-  text-align:center;
+  padding: 10px 0;
+  float: left;
 }
 
 .team-logo {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
+
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
 }
 
 .team-name {
-  padding: 5px 0;
+  padding: 15px 0 0;
+  display: block;
+  width: 100%;
+  color: $white;
+  line-height: 25px;
 }
 
 .menu-short input:checked~.menu-short-collapse {
@@ -264,6 +274,9 @@ input.chkbox-menu {
     }
   nav {
     font-size: 20px;
+  }
+  .teams {
+    width: 33%;
   }
 }
 

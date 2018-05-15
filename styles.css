@@ -188,16 +188,22 @@ input.chkbox-menu {
     border-bottom: 0px; }
 
 .teams {
+  text-align: center;
   width: 100%;
-  text-align: center; }
+  padding: 10px 0;
+  float: left; }
 
-.team-logo {
-  display: flex;
-  align-items: center;
-  padding: 10px 0; }
+.team-logo img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto; }
 
 .team-name {
-  padding: 5px 0; }
+  padding: 15px 0 0;
+  display: block;
+  width: 100%;
+  color: #FFFFFF;
+  line-height: 25px; }
 
 .menu-short input:checked ~ .menu-short-collapse {
   margin-left: -130px; }
@@ -214,7 +220,10 @@ input.chkbox-menu {
     top: 25vh; }
 
   nav {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .teams {
+    width: 33%; } }
 @media screen and (min-width: 300px) and (max-width: 719px) and (orientation: landscape) {
   main, footer, .nav-bar {
     display: none; }
