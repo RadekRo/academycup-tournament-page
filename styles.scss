@@ -237,6 +237,18 @@ input.chkbox-menu {
   width: 100%;
   padding: 10px 0;
   float: left;
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.teams:hover {
+  background: $red;
+  opacity: 0.7;
+  transition: 3s; // transition effect for short menu
+  -webkit-transition: 3s; // transition effect for short menu
 }
 
 .team-logo {
