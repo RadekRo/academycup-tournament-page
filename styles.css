@@ -97,6 +97,11 @@ section {
   font-size: 17px;
   line-height: 20px;
   clear: both; }
+  .section-content a {
+    text-decoration: none;
+    color: #ffff00; }
+  .section-content a:hover {
+    color: #FF0000; }
 
 .section-content-element {
   width: 100%;
