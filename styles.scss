@@ -278,6 +278,18 @@ input.chkbox-menu {
   line-height: 25px;
 }
 
+.sponsors {
+
+  .sponsor-section {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+}
+
 .menu-short input:checked~.menu-short-collapse {
   margin-left: -130px;
 }
@@ -298,6 +310,11 @@ input.chkbox-menu {
   }
   .teams {
     width: 33%;
+  }
+  .sponsors {
+    .sponsor-section {
+      width: 50%;
+    }
   }
 }
 

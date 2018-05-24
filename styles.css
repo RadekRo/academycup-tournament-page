@@ -218,6 +218,13 @@ input.chkbox-menu {
   color: #FFFFFF;
   line-height: 25px; }
 
+.sponsors .sponsor-section {
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 10px 0; }
+
 .menu-short input:checked ~ .menu-short-collapse {
   margin-left: -130px; }
 
@@ -236,7 +243,10 @@ input.chkbox-menu {
     font-size: 20px; }
 
   .teams {
-    width: 33%; } }
+    width: 33%; }
+
+  .sponsors .sponsor-section {
+    width: 50%; } }
 @media screen and (min-width: 300px) and (max-width: 719px) and (orientation: landscape) {
   main, footer, .nav-bar {
     display: none; }
